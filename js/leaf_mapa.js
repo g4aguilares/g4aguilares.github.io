@@ -1,3 +1,20 @@
+var data = {  
+  "description": "anonymous gist",
+  "public": false,
+  "files": {
+    "file1.txt": {
+      "content": "file content!"
+    }
+  }
+};
+var xhr = new XMLHttpRequest();  
+xhr.open("post", "https://api.github.com/gists", true);  
+xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');  
+xhr.onload = function(e) {  
+  // do stuff with the response, like show a link to the created gist
+};
+xhr.send(JSON.stringify(data));
+
 /*console.log(concatenar);
 var palabra = "token ";
 
