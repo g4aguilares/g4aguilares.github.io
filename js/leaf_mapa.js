@@ -1,4 +1,4 @@
-function getGET(){
+/*function getGET(){
    var loc = document.location.href;
    var getString = loc.split('?')[1];
    var GET = getString.split('&');
@@ -12,7 +12,7 @@ function getGET(){
 }
 
 var get = getGET();
-console.log(get);
+console.log(get);*/
 
 var data = {  
   "description": "anonymous gist",
